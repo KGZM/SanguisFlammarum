@@ -5,7 +5,10 @@ playlist.addTrack('supertrack', {
     date: "Blah.",
     notes: "Toughness."
   },
-  shaders: ['whatever.glsl', 'blah.glsl'],
+  shaders: {
+    vertex: 'whatever.glsl',
+    fragment: 'blah.glsl'
+  },
   audio: "staytough.mp3",
   setup: function(stuff) {
     doStuffTo(stuff);
